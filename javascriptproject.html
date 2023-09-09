@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1.addition of three numbers</h1>
+    <script>
+        var a,b,c;
+        a=10
+        b=20
+        c=30
+        result=a+b+c
+        document.writeln("sum of three numbers",result)
+        document.writeln("<br>")
+        const x=5
+        const y=10
+        const z=x+y
+        document.writeln(z)
+    </script>
+    <br><br><br>
+    <h1>2.calculator in javascript</h1>
+     <input type="number" id="first">
+     <select id="ope">
+         <option value="+">+</option>
+         <option value="-">-</option>
+         <option value="*">x</option>
+         <option value="/">/</option>
+         <option value="%">%</option>
+     </select>
+     <input type="number" id="second">
+     <br><br>
+     <button onclick="cal()" style="background-color:black; color: white;">calculate</button>
+     <input type="text" id="res" > 
+     <br>
+     <h1>3.if statement</h1>
+     <script>
+         function cal(){
+             var opr1=document.getElementById('first').value;
+             var opr2=document.getElementById('second').value;
+             var ope=document.getElementById('ope').value;
+             if(ope=='+'){
+                 var res=parseInt(opr1)+parseInt(opr2);
+             }
+             if(ope=='-'){
+                 var res=parseInt(opr1)-parseInt(opr2);
+         
+             }
+             if(ope=='*'){
+                 var res=parseInt(opr1)*parseInt(opr2);
+             }
+             if(ope=='/'){
+                 var res=parseInt(opr1)/parseInt(opr2);
+             }
+             if(ope=='%'){
+                 var res=parseInt(opr1)%parseInt(opr2);
+             }
+             document.getElementById('res').value=res;
+         }
+     </script>
+     <br><br>
+     <h1>4.Data Types in javascript</h1>
+      <script>
+        var a=10
+        document.writeln(a)
+        document.writeln(typeof a)
+        document.writeln("<br>")
+
+        var b=5.5
+        document.writeln(b)
+        document.writeln(typeof b)
+        document.writeln("<br>")
+
+
+        var c="abc"
+        document.writeln(c)
+        document.writeln(typeof c)
+        document.writeln("<br>")
+
+        var d=true
+        document.writeln(d)
+       document.writeln(typeof d)
+       document.writeln("<br>")
+
+        var e=[10,30,40]
+        document.writeln(e)
+        document.writeln(typeof e)
+        document.writeln("<br>")
+
+        var f
+        document.writeln(f)
+        document.writeln(typeof f)
+        document.writeln("<br>")
+
+
+        var student={name:"sundeep",rno:528,city:"hubali",clg:"bvb collage"}
+     document.writeln( "data type of student",typeof student)
+     document.writeln(student.name)
+     document.writeln(student.rno)
+    document.writeln(student.city)
+       document.writeln(student.clg)
+ 
+       document.writeln("<br><br>")
+       var marks= [10,100,85,75]
+       document.writeln("data type of marks", typeof marks)
+        document.writeln(marks[0])
+        document.writeln(marks[1])
+         document.writeln(marks[2])
+         document.writeln(marks[3])
+    </script>
+    <br><br>
+    <h1>5. while loop</h1>
+    <script>
+        var a=1;
+        while(a<=10){
+            document.write(a,"<br>" );
+            a++;
+        }
+     </script>   
+     <br><br>
+     <h1>6.for loop</h1>
+     <script>
+        for(let a=10;a>=1; a--)
+        {
+            document.write(a,"<br>");
+        }
+            </script>
+            <br><br>
+            <h1>7.function</h1>
+            <script>
+                function add(x,y)
+                {
+                    var a=x
+                    var b=y
+                    var c=a+b
+                    console.log(c)
+         
+                }
+        
+            print(); 
+            </script>
+            <button onclick="add(5,5)">add</button>
+            <h1>8.variables</h1>
+            <script>
+            var a=10
+            var a=a+1
+            document.writeln(a)
+            document.writeln("<br> <br>")
+        
+            a=5
+            b=10
+            c=a+b
+            document.writeln(c)
+            document.writeln("<br>")
+             a=40
+             b=20
+             c=a-b
+             document.writeln(c)
+             document.writeln("<br>")
+        
+             a=15
+             b=20
+             c=a*b
+             document.writeln(c)
+        
+             document.writeln("<br>")
+        
+             a=30
+             b=8
+             c=a/b
+             document.writeln(c)
+             document.writeln("<br>")
+            </script>
+                 <br><br>
+    </script>
+    <br><br>
+        <body>
+            <h1>9.if elseif else statement</h1>
+            <h2>Enter the age<input type="text" id="t1"></h2>
+            <button onclick="age()">verify</button>
+            <script>
+                var time=prompt("what is the time:");
+                if(time>1&&time<=12) 
+                {
+                 window.alert("good morning");
+                }
+                else if(time>12&&time<=15)
+                {
+                    window.alert("good afternoon");
+                }
+                else if(time>15&&time<=18)
+                {
+                    window.alert("good evaning");
+                }
+                else{
+                    window.alert("good night");
+                }
+            
+                
+            </script>
+            <br><br>
+            <h1>10.if elseif else</h1>
+            <script>
+                function fun()
+                 { 
+             var lift_floor=parseInt(document.getElementById('a').value )
+             var lift_floor=prompt("which floor you can go")
+                   if(lift_floor>0&&lift_floor<=1) 
+             {
+                 window.alert("You are reached first floor");
+             }
+             else if(lift_floor>1&&lift_floor<=2)
+             {
+                 window.alert("You are reached second floor");
+             }
+             else if(lift_floor>2&&lift_floor<=3)
+             {
+                 window.alert(" You are reached third floor");
+             }
+             else{
+                 window.alert(" You are reached fourth floor");
+             }
+             }
+             </script>
+             
+             
+             
+                 <button onclick="fun()">Click</button>
+                 <input id="a">
+                 <h1>11.types of js</h1>
+                
+                    <h1 id="b">hello world</h1>
+                    <button onclick="document.getElementById('b').innerHTML='Inline js'">Inline js</button>
+                    <button onclick="fun1()">Internal js</button>
+                    <button onclick="fun2()">External js</button>
+                    <script src="extern.js"></script>
+                    <script>
+                        function fun1()
+                        {
+                       document.getElementById('b').innerHTML='Internal js'      
+                        }
+                    </script>
+                    <br><br>
+                    <h1>12.Math</h1>
+                    <script>
+                        document.write(Math.PI,"<br>");
+                        document.write(Math.SQRT1_2,"<br>");
+                        document.write(Math.SQRT2,"<br>");
+                        document.write(Math.LN2,"<br>");
+                        document.write(Math.LN10,"<br>");
+                        document.write(Math.LOG2E,"<br>");
+                        document.write(Math.LOG10E,"<br>","<br>");
+                        
+                        
+                    var a=Math.round(4.4);
+                    document.write(a,"<br>");
+                    var b=Math.ceil(4.4);
+                    document.write(b,"<br>");
+                   var c=Math.floor(4.6);
+                   document.write(c,"<br>");
+                   var d=Math.trunc(4.6);
+                   document.write(d);
+                  
+    </script> 
+    <br><br>
+<h1>13.Numbers in javascript</h1>
+   <script>
+    document.writeln(10+10,"<br>");
+    document.writeln(10+"20","<br>");
+    document.writeln("10"+"10","<br>");
+    document.writeln(10+20+"30","<br>");
+    document.writeln("30"+20+10,"<br>");
+    document.writeln(10-20,"<br>");
+    document.writeln("20"-10,"<br>");
+    document.writeln("20"*10,"<br>");
+    document.writeln("20"/100,"<br>");
+    document.writeln(20/"abc","<br>");
+    document.writeln(20/0,"<br>");
+    document.writeln("20"/"0","<br>");
+   </script> 
+   <br><br>
+   <h1>14.Switch statements</h1>
+   <script>
+        
+    let month=1
+    switch(month)
+    
+    {  
+        case 1:document.write("january")
+        break;
+    case 2:document.write("February")
+        break;
+        case 3:document.write("March")
+        break;
+        case 4:document.write("April")
+        break;
+        case 5:document.write("May")
+        break;
+        case 6:document.write("June")
+        break;
+        case 7:document.write("Jule")
+        break;
+        case 8:document.write("August")
+        break;
+        case 9:document.write("September")
+        break;
+        case 10:document.write("October")
+        break;
+        case 11:document.write("November")
+        break;
+        case 12:document.write("December")
+        break;
+        default:document.write("please Enter valid months Number")
+    }
+        </script>
+         <button onclick="">click</button>
+         <input id="a" >
+         <h1>15.opertors</h1>
+         <h3>adition</h3>
+         <script>
+          function add(x,y)
+          {
+              return x+y
+          }
+          var a,b,sum;
+          a=30;
+          b=20;
+          sum=add(a,b);
+          document.writeln("sum="+sum)
+          console.log("sum of two numbers")
+          window.alert("sum of two numbers")
+          document.writeln("<br>")
+         </script> 
+         <h3>substraction</h3>
+      
+         <script>
+      
+          function sub(x,y)
+      
+          {
+              document.writeln("sub=",x-y);
+              document.writeln("<br>")
+            
+          }
+          var a,b;
+          a=500;
+          b=220;
+          sub(a,b);
+         </script>
+         <h3>multipication</h3>
+         <script>
+          function multi(x,y)
+          {
+            return (x*y) 
+      
+          }
+          var p,q,multi;
+          p=20;
+          q=5;
+          multi=multi(p,q);
+          document.writeln("multi=",multi)
+         </script>
+         <h3>division</h3>
+         <script>
+          function div(x,y)
+          {
+              return (x/y)
+          }
+          var m,n,div;
+          m=50;
+          n=5;
+          div=div(m,n); 
+          document.writeln("div=",div) 
+          </script>
+          <script>
+              function div(x,y)
+              {
+                  return (x/y)
+              }
+              var s,q,div;
+              s=30;
+              q=50;
+              div=div(s,q);
+              document.writeln("div=",div, "<br>")
+          </script>
+           <script>
+              function add(abc)
+              {
+              document.writeln("Hello!");
+              }
+          </script>
+          <br><br>
+          <h1>16.User defined function</h1>
+          <script>
+      function add(a,b)
+      { var a=10;
+      var b=30;
+      var c=a+b;
+      
+          document.write(c)
+      }
+      
+      
+          </script>
+        
+      </body>
+      
+      <button onclick="add()">add</button>
+        </body>
+</html>
